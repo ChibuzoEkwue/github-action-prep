@@ -1,0 +1,22 @@
+name: "Use Greeting Action"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run custom greeting action
+        id: greet_step
+        uses: chibuzoekwue/my-greeting-action@v1
+        with:
+          name: "Chibuzo"
+
+      - name: Use greeting output
+        run: |
+          echo "The greeting message was: ${{ steps.greet_step.outputs.greeting }}"
