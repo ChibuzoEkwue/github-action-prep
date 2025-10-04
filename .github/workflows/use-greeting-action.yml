@@ -15,7 +15,7 @@ jobs:
         id: greet_step
         uses: chibuzoekwue/my-greeting-action@v1
         with:
-          name: "Chibuzo"
+          name: "Chibuzo Ekwue"
 
       - name: Use greeting output
         run: |
