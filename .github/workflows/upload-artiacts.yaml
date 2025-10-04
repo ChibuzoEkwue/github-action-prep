@@ -10,7 +10,7 @@ jobs:
             - name: Zip cert.txt
               run: zip cert.zip cert.txt
             - name: Upload cert.zip
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                   name: cert-artifact
                   path: cert.zip
