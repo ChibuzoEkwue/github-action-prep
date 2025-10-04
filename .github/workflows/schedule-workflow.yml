@@ -1,0 +1,20 @@
+name: Weekly Sunday Midnight Run
+
+on:
+  schedule:
+    - cron: '0 23 * * 6' # Saturday 11 PM UTC == Sunday 12 AM (midnight) WAT
+  workflow_dispatch: # allows you to run manually if needed
+
+jobs:
+  weekly_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print current time
+        run: echo "The current UTC time is $(date -u)"
+
+      - name: Run your custom task
+        run: echo "This workflow runs every Sunday at midnight!"
