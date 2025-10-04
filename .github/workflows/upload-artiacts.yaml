@@ -1,0 +1,16 @@
+name: template-artifacts
+on:
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Create cert.txt
+              run: echo "This is a certificate file." > cert.txt
+            - name: Zip cert.txt
+              run: zip cert.zip cert.txt
+            - name: Upload cert.zip
+              uses: actions/upload-artifact@v3
+              with:
+                  name: cert-artifact
+                  path: cert.zip
