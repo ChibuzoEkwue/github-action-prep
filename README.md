@@ -1,7 +1,7 @@
 ![Codeql scan](https://github.com/chibuzoekwue/github-action-prep/actions/workflows/codeql-code-scan.yml/badge.svg)
 
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[![template-artifacts](https://github.com/ChibuzoEkwue/github-action-prep/actions/workflows/upload-artiacts.yaml/badge.svg)](https://github.com/ChibuzoEkwue/github-action-prep/actions/workflows/upload-artiacts.yaml)
 
 ## Getting Started
 
